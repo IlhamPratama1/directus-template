@@ -1,6 +1,7 @@
 {
 	"name": "directus-ilham",
-	"private": true,
+	"description": "Test Custom Directus Ilham",
+	"version": "1.0.0",
 	"scripts": {
 		"build": "pnpm --recursive --filter '!docs' run build",
 		"format": "prettier --write \"**/*.{md,y?(a)ml,json}\"",
