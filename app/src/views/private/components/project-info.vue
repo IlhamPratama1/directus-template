@@ -2,16 +2,16 @@
 	<div class="project-info">
 		<latency-indicator />
 		<div class="name-container">
-			<v-text-overflow placement="right" class="name" :text="name" />
+			<v-text-overflow placement="right" class="name" :text="'Directus Asolole'" />
 			<v-text-overflow v-if="descriptor" placement="right" class="descriptor" :text="descriptor" />
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
+import { useServerStore } from '@/stores/server';
 import { computed } from 'vue';
 import LatencyIndicator from './latency-indicator.vue';
-import { useServerStore } from '@/stores/server';
 
 const serverStore = useServerStore();
 
