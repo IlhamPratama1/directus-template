@@ -1,5 +1,5 @@
 {
-	"name": "ilham-docs",
+	"name": "asolole-docs",
 	"private": true,
 	"scripts": {
 		"build": "vitepress build",

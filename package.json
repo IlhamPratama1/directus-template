@@ -1,5 +1,5 @@
 {
-	"name": "directus-ilham-monorepo",
+	"name": "directus-asolole-monorepo",
 	"private": true,
 	"scripts": {
 		"build": "pnpm --recursive --filter '!docs' run build",

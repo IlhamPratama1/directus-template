@@ -1,5 +1,5 @@
 {
-	"name": "directus-ilham",
+	"name": "directus-asolole",
 	"version": "1.0.1",
 	"description": "Directus is a real-time API and App dashboard for managing SQL database content",
 	"keywords": [
@@ -50,7 +50,7 @@
 		"./package.json": "./package.json"
 	},
 	"bin": {
-		"directus-ilham": "cli.js"
+		"directus-asolole": "cli.js"
 	},
 	"dependencies": {
 		"@directus/api": "workspace:*",
