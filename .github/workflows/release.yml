@@ -2,15 +2,15 @@ name: Release
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - main
 
 env:
   GHCR_IMAGE: ghcr.io/${{ github.repository }}
   DOCKERHUB_IMAGE: ${{ github.repository }}
 
 jobs:
-  create-release:
+  # create-release:
     name: Create Release
     runs-on: ubuntu-latest
     steps:
@@ -37,9 +37,9 @@ jobs:
       - name: Publish packages to NPM
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm --recursive publish --access=public --no-git-checks
+        run: pnpm --recursive --filter @directus/components,@directus/themes publish --access=public --no-git-checks
 
-  build-images:
+  # build-images:
     name: Build Images
     runs-on: ubuntu-latest
     steps:

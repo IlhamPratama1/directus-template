@@ -1,5 +1,5 @@
 {
-	"name": "@directus/api",
+	"name": "@arc-directus/api",
 	"version": "12.0.0",
 	"description": "Directus is a real-time API and App dashboard for managing SQL database content",
 	"keywords": [
@@ -66,10 +66,10 @@
 	"dependencies": {
 		"@authenio/samlify-node-xmllint": "2.0.0",
 		"@aws-sdk/client-ses": "3.332.0",
-		"@directus/app": "workspace:*",
+		"@arc-directus/app": "workspace:*",
 		"@directus/constants": "workspace:*",
 		"@directus/errors": "workspace:*",
-		"@directus/extensions-sdk": "workspace:*",
+		"@arc-directus/extensions-sdk": "workspace:*",
 		"@directus/format-title": "10.0.0",
 		"@directus/pressure": "workspace:*",
 		"@directus/schema": "workspace:*",

@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -8,12 +8,12 @@ importers:
 
   .:
     devDependencies:
+      '@arc-directus/release-notes-generator':
+        specifier: workspace:*
+        version: link:packages/release-notes-generator
       '@changesets/cli':
         specifier: 2.26.1
         version: 2.26.1
-      '@directus/release-notes-generator':
-        specifier: workspace:*
-        version: link:packages/release-notes-generator
       '@typescript-eslint/eslint-plugin':
         specifier: 5.59.6
         version: 5.59.6(@typescript-eslint/parser@5.59.6)(eslint@8.40.0)(typescript@5.0.4)
@@ -35,24 +35,24 @@ importers:
 
   api:
     dependencies:
+      '@arc-directus/app':
+        specifier: workspace:*
+        version: link:../app
+      '@arc-directus/extensions-sdk':
+        specifier: workspace:*
+        version: link:../packages/extensions-sdk
       '@authenio/samlify-node-xmllint':
         specifier: 2.0.0
         version: 2.0.0(samlify@2.8.10)
       '@aws-sdk/client-ses':
         specifier: 3.332.0
         version: 3.332.0
-      '@directus/app':
-        specifier: workspace:*
-        version: link:../app
       '@directus/constants':
         specifier: workspace:*
         version: link:../packages/constants
       '@directus/errors':
         specifier: workspace:*
         version: link:../packages/errors
-      '@directus/extensions-sdk':
-        specifier: workspace:*
-        version: link:../packages/extensions-sdk
       '@directus/format-title':
         specifier: 10.0.0
         version: 10.0.0
@@ -502,6 +502,9 @@ importers:
 
   app:
     devDependencies:
+      '@arc-directus/extensions-sdk':
+        specifier: workspace:*
+        version: link:../packages/extensions-sdk
       '@babel/core':
         specifier: 7.21.8
         version: 7.21.8
@@ -517,9 +520,6 @@ importers:
       '@directus/errors':
         specifier: workspace:*
         version: link:../packages/errors
-      '@directus/extensions-sdk':
-        specifier: workspace:*
-        version: link:../packages/extensions-sdk
       '@directus/format-title':
         specifier: 10.0.0
         version: 10.0.0
@@ -886,7 +886,7 @@ importers:
 
   directus:
     dependencies:
-      '@directus/api':
+      '@arc-directus/api':
         specifier: workspace:*
         version: link:../api
       '@directus/update-check':
@@ -1055,12 +1055,12 @@ importers:
 
   packages/create-directus-extension:
     dependencies:
+      '@arc-directus/extensions-sdk':
+        specifier: workspace:*
+        version: link:../extensions-sdk
       '@directus/constants':
         specifier: workspace:*
         version: link:../constants
-      '@directus/extensions-sdk':
-        specifier: workspace:*
-        version: link:../extensions-sdk
       inquirer:
         specifier: 9.2.4
         version: 9.2.4

@@ -1,5 +1,5 @@
 {
-	"name": "@directus/app",
+	"name": "@arc-directus/app",
 	"version": "10.4.0",
 	"description": "App dashboard for Directus",
 	"homepage": "https://directus.io",
@@ -34,7 +34,7 @@
 		"@directus/composables": "workspace:*",
 		"@directus/constants": "workspace:*",
 		"@directus/errors": "workspace:*",
-		"@directus/extensions-sdk": "workspace:*",
+		"@arc-directus/extensions-sdk": "workspace:*",
 		"@directus/format-title": "10.0.0",
 		"@directus/stores": "workspace:*",
 		"@directus/types": "workspace:*",

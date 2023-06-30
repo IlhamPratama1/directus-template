@@ -12,4 +12,4 @@ if (version) {
 	await updateCheck(version);
 }
 
-import('@directus/api/cli/run.js');
+import('@arc-directus/api/cli/run.js');
