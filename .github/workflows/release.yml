@@ -37,7 +37,7 @@ jobs:
       - name: Publish packages to NPM
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm --recursive --filter @directus/components,@directus/themes publish --access=public --no-git-checks
+        run: ppnpm --recursive publish --access=public --no-git-checks
 
   # build-images:
   #   name: Build Images
