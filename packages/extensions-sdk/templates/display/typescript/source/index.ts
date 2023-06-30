@@ -1,4 +1,4 @@
-import { defineDisplay } from '@directus/extensions-sdk';
+import { defineDisplay } from '@arc-directus/extensions-sdk';
 import DisplayComponent from './display.vue';
 
 export default defineDisplay({

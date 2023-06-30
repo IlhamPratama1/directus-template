@@ -117,7 +117,7 @@ export default {
 </script>
 
 <script setup lang="ts">
-import { useSync } from '@directus/extensions-sdk';
+import { useSync } from '@arc-directus/extensions-sdk';
 import { useI18n } from 'vue-i18n';
 
 const props = withDefaults(

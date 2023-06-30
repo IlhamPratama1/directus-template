@@ -100,7 +100,7 @@ import VResizeable, { ResizeableOptions } from '@/components/v-resizeable.vue';
 import { useLocalStorage } from '@/composables/use-local-storage';
 import { useTitle } from '@/composables/use-title';
 import { useWindowSize } from '@/composables/use-window-size';
-import { useAppStore } from '@/stores/app';
+import { useAppStore } from '@directus/stores';
 import { useUserStore } from '@/stores/user';
 import { useElementSize, useSync } from '@directus/composables';
 import { useEventListener } from '@vueuse/core';
@@ -177,8 +177,8 @@ watch(splitViewWritable, () => {
 	const previousContentOverflowY = contentEl.value.style.overflowY;
 	contentEl.value.style.overflowY = 'hidden';
 
-	let headerBarTransitionTimer: ReturnType<typeof setTimeout>;
-	let cleanupListener: () => void;
+	let headerBarTransitionTimer: ReturnType<typeof setTimeout> | undefined = undefined;
+	let cleanupListener: (() => void) | undefined = undefined;
 
 	const resetContentOverflowY = () => {
 		if (contentEl.value) {
@@ -186,7 +186,7 @@ watch(splitViewWritable, () => {
 		}
 
 		clearTimeout(headerBarTransitionTimer);
-		cleanupListener();
+		cleanupListener?.();
 	};
 
 	headerBarTransitionTimer = setTimeout(resetContentOverflowY, 1500);
@@ -444,6 +444,7 @@ function getWidth(input: unknown, fallback: number): number {
 		font-size: 15px;
 		line-height: 24px;
 
+		.content-wrapper,
 		main {
 			display: contents;
 		}

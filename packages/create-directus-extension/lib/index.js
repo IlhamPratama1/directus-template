@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 'use strict';
 
+import { create } from '@arc-directus/extensions-sdk/cli';
+import { BUNDLE_EXTENSION_TYPES, EXTENSION_LANGUAGES, EXTENSION_TYPES } from '@directus/constants';
 import inquirer from 'inquirer';
-import { EXTENSION_LANGUAGES, EXTENSION_TYPES, BUNDLE_EXTENSION_TYPES } from '@directus/constants';
-import { create } from '@directus/extensions-sdk/cli';
 
 run();
 
