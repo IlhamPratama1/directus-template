@@ -403,7 +403,11 @@ class ExtensionManager {
 
 		const depsMapping: Record<string, string> = {};
 
-		for (const dep of deps) {
+		for (let dep of deps) {
+			if (dep === '@directus/extensions-sdk') {
+				dep = '@arc-directus/extensions-sdk';
+			}
+
 			const depRegex = new RegExp(`${escapeRegExp(dep.replace(/\//g, '_'))}\\.[0-9a-f]{8}\\.entry\\.js`);
 			const depName = appDir.find((file) => depRegex.test(file));
 
