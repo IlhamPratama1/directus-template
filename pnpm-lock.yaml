@@ -893,6 +893,58 @@ importers:
         specifier: workspace:*
         version: link:../packages/update-check
 
+  docs:
+    dependencies:
+      node-fetch:
+        specifier: 3.3.1
+        version: 3.3.1
+    devDependencies:
+      '@directus/format-title':
+        specifier: 10.0.0
+        version: 10.0.0
+      '@vue/tsconfig':
+        specifier: 0.4.0
+        version: 0.4.0
+      eslint-parser-plain:
+        specifier: 0.1.0
+        version: 0.1.0
+      eslint-plugin-markdown:
+        specifier: 3.0.0
+        version: 3.0.0(eslint@8.40.0)
+      eslint-plugin-prettier:
+        specifier: npm:@paescuj/eslint-plugin-prettier@4.3.0-1
+        version: /@paescuj/eslint-plugin-prettier@4.3.0-1(eslint-config-prettier@8.8.0)(eslint@8.40.0)(prettier@2.8.8)
+      eslint-plugin-react:
+        specifier: 7.32.2
+        version: 7.32.2(eslint@8.40.0)
+      spellchecker-cli:
+        specifier: 6.1.1
+        version: 6.1.1
+      typedoc:
+        specifier: 0.24.7
+        version: 0.24.7(typescript@5.0.4)
+      typedoc-plugin-frontmatter:
+        specifier: 0.0.2
+        version: 0.0.2
+      typedoc-plugin-markdown:
+        specifier: 4.0.0-next.13
+        version: 4.0.0-next.13(prettier@2.8.8)(typedoc@0.24.7)
+      typedoc-plugin-zod:
+        specifier: 1.0.2
+        version: 1.0.2(typedoc@0.24.7)
+      typedoc-vitepress-theme:
+        specifier: 1.0.0-next.2
+        version: 1.0.0-next.2(typedoc-plugin-markdown@4.0.0-next.13)
+      typescript:
+        specifier: 5.0.4
+        version: 5.0.4
+      vitepress:
+        specifier: 1.0.0-alpha.75
+        version: 1.0.0-alpha.75(@algolia/client-search@4.17.0)
+      vue:
+        specifier: 3.3.4
+        version: 3.3.4
+
   packages/components:
     dependencies:
       pinia:
@@ -8677,6 +8729,10 @@ packages:
       '@vue/server-renderer': 3.3.4(vue@3.3.4)
     dev: true
 
+  /@vue/tsconfig@0.4.0:
+    resolution: {integrity: sha512-CPuIReonid9+zOG/CGTT05FXrPYATEqoDGNrEaqS4hwcw5BUNM2FguC0mOwJD4Jr16UpRVl9N0pY3P+srIbqmg==}
+    dev: true
+
   /@vueuse/core@10.1.2(vue@3.3.4):
     resolution: {integrity: sha512-roNn8WuerI56A5uiTyF/TEYX0Y+VKlhZAF94unUfdhbDUI+NfwQMn4FUnUscIRUhv3344qvAghopU4bzLPNFlA==}
     dependencies:
@@ -11527,6 +11583,49 @@ packages:
       eslint: 8.40.0
     dev: true
 
+<<<<<<< HEAD
+=======
+  /eslint-parser-plain@0.1.0:
+    resolution: {integrity: sha512-oOeA6FWU0UJT/Rxc3XF5Cq0nbIZbylm7j8+plqq0CZoE6m4u32OXJrR+9iy4srGMmF6v6pmgvP1zPxSRIGh3sg==}
+    dev: true
+
+  /eslint-plugin-markdown@3.0.0(eslint@8.40.0):
+    resolution: {integrity: sha512-hRs5RUJGbeHDLfS7ELanT0e29Ocyssf/7kBM+p7KluY5AwngGkDf8Oyu4658/NZSGTTq05FZeWbkxXtbVyHPwg==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      eslint: 8.40.0
+      mdast-util-from-markdown: 0.8.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /eslint-plugin-react@7.32.2(eslint@8.40.0):
+    resolution: {integrity: sha512-t2fBMa+XzonrrNkyVirzKlvn5RXzzPwRHtMvLAtVZrt8oxgnTQaYbU6SXTOO1mwQgp1y5+toMSKInnzGr0Knqg==}
+    engines: {node: '>=4'}
+    peerDependencies:
+      eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
+    dependencies:
+      array-includes: 3.1.6
+      array.prototype.flatmap: 1.3.1
+      array.prototype.tosorted: 1.1.1
+      doctrine: 2.1.0
+      eslint: 8.40.0
+      estraverse: 5.3.0
+      jsx-ast-utils: 3.3.4
+      minimatch: 3.1.2
+      object.entries: 1.1.6
+      object.fromentries: 2.0.6
+      object.hasown: 1.1.2
+      object.values: 1.1.6
+      prop-types: 15.8.1
+      resolve: 2.0.0-next.4
+      semver: 6.3.0
+      string.prototype.matchall: 4.0.8
+    dev: true
+
+>>>>>>> 66f916916adbcba91543e556d14471f2a613ef8a
   /eslint-plugin-vue@9.13.0(eslint@8.40.0):
     resolution: {integrity: sha512-aBz9A8WB4wmpnVv0pYUt86cmH9EkcwWzgEwecBxMoRNhQjTL5i4sqadnwShv/hOdr8Hbl8XANGV7dtX9UQIAyA==}
     engines: {node: ^14.17.0 || >=16.0.0}
@@ -11539,7 +11638,7 @@ packages:
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.13
       semver: 7.5.1
-      vue-eslint-parser: 9.3.1(eslint@8.40.0)
+      vue-eslint-parser: 9.3.0(eslint@8.40.0)
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
       - supports-color
@@ -14111,7 +14210,7 @@ packages:
       whatwg-encoding: 2.0.0
       whatwg-mimetype: 3.0.0
       whatwg-url: 11.0.0
-      ws: 8.13.0
+      ws: 8.12.1
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
       - bufferutil
@@ -14301,6 +14400,29 @@ packages:
       promise: 7.3.1
     dev: true
 
+<<<<<<< HEAD
+=======
+  /jsx-ast-utils@3.3.4:
+    resolution: {integrity: sha512-fX2TVdCViod6HwKEtSWGHs57oFhVfCMwieb9PuRDgjDPh5XeqJiHFFFJCHxU5cnTc3Bu/GRL+kPiFmw8XWOfKw==}
+    engines: {node: '>=4.0'}
+    dependencies:
+      array-includes: 3.1.6
+      array.prototype.flat: 1.3.1
+      object.assign: 4.1.4
+      object.values: 1.1.6
+    dev: true
+
+  /junit-report-builder@3.0.1:
+    resolution: {integrity: sha512-B8AZ2q24iGwPM3j/ZHc9nD0BY1rKhcnWCA1UvT8mhHfR8Vo/HTtg3ojMyo55BgctqQGZG7H8z0+g+mEUc32jgg==}
+    engines: {node: '>=8'}
+    dependencies:
+      date-format: 4.0.3
+      lodash: 4.17.21
+      make-dir: 3.1.0
+      xmlbuilder: 15.1.1
+    dev: true
+
+>>>>>>> 66f916916adbcba91543e556d14471f2a613ef8a
   /jwa@1.4.1:
     resolution: {integrity: sha512-qiLX/xhEEFKUAJ6FiBMbes3w9ATzyk5W7Hvzpa/SLYdxNtng+gcurvrI7TbACjIXlsJyr05/S1oUhZrc63evQA==}
     dependencies:
@@ -19926,6 +20048,13 @@ packages:
     resolution: {integrity: sha512-F9p7yYCn6cIW9El1zi0HI6vqpeIvBsr3dSuRO6Xuppb1u5rXpCPmMvLSyECLhybr9isec8Ohl0hPekMVrEinDA==}
     dev: true
 
+<<<<<<< HEAD
+=======
+  /unherit@3.0.1:
+    resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
+    dev: true
+
+>>>>>>> 66f916916adbcba91543e556d14471f2a613ef8a
   /unicode-canonical-property-names-ecmascript@2.0.0:
     resolution: {integrity: sha512-yY5PpDlfVIU5+y/BSCxAJRBIS1Zc2dDG3Ujq+sR0U+JjUevW2JhocOF+soROYDSaAezOzOKuyyixhD6mBknSmQ==}
     engines: {node: '>=4'}
@@ -20514,8 +20643,8 @@ packages:
       - vue
     dev: true
 
-  /vue-eslint-parser@9.3.1(eslint@8.40.0):
-    resolution: {integrity: sha512-Clr85iD2XFZ3lJ52/ppmUDG/spxQu6+MAeHXjjyI4I1NUYZ9xmenQp4N0oaHJhrA8OOxltCVxMRfANGa70vU0g==}
+  /vue-eslint-parser@9.3.0(eslint@8.40.0):
+    resolution: {integrity: sha512-48IxT9d0+wArT1+3wNIy0tascRoywqSUe2E1YalIC1L8jsUGe5aJQItWfRok7DVFGz3UYvzEI7n5wiTXsCMAcQ==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'

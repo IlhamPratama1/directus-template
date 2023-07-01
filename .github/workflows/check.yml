@@ -3,12 +3,12 @@ name: Check
 on:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
       - docs/**
   pull_request:
     branches:
-      - main
+      - master
 
 concurrency:
   group: check-${{ github.ref }}
