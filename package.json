@@ -1,5 +1,5 @@
 {
-	"name": "directus-asolole-monorepo",
+	"name": "arc-directus-monorepo",
 	"private": true,
 	"scripts": {
 		"build": "pnpm --recursive --filter '!docs' run build",
